@@ -1,0 +1,11 @@
+OS X keyboard layout for developers and users of Creative Suite who occasionally type in German.
+
+Doesn't apply to you? You're probably not interested in this.
+
+It's based on the default British keyboard layout but provides direct access to umlauts:
+ - ⌥A = ä
+ - ⌥O = ö
+ - ⌥U = ü
+ - ⇧⌥A = Ä
+ - ⇧⌥O = Ö
+ - ⇧⌥U = Ü
