@@ -25,4 +25,4 @@ The layout provides all the convenience of an English keyboard layout yet allows
 
 The Umlaut dead-key state is still available but remapped to `^⌥U`. This allows continued access to other characters that use the same diacritic, e.g. _ë_.
 
-Created using [Ukelele][http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&item_id=ukelele].
+Created using [Ukelele](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&item_id=ukelele).
