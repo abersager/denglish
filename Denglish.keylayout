@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE keyboard PUBLIC "" "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
 <!-- Fri, 24 Feb 2006 Generated from KCHR: "British" -->
-<!--Last edited by Ukelele version 2.1.8 on 2012-01-28 at 12:00 (GMT)-->
+<!--Last edited by Ukelele version 2.2.7 on 2015-04-15 at 00:25 (CEST)-->
 <!--Created by Ukelele version 1.8.1 on 2009-04-15 at 00:19 (CEST)-->
-<keyboard group="0" id="202" name="British Umlauts" maxout="1">
+<keyboard group="0" id="202" name="Denglish" maxout="1">
     <layouts>
         <layout first="0" last="0" modifiers="commonModifiers" mapSet="ANSI"/>
     </layouts>
