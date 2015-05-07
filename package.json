@@ -1,6 +1,6 @@
 {
   "name": "denglish",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "OS X keyboard layout for German speaking developers and other power users",
   "main": "index.js",
   "scripts": {

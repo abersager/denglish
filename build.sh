@@ -5,8 +5,6 @@ mkdir build
 rm -rf dist
 mkdir dist
 
-cp shortcuts/Keyboard build/
-
 declare -a englishes=("uk" "us")
 declare -a germans=("at" "de")
 
