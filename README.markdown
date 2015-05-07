@@ -1,28 +1,54 @@
-# British Umlauts #
+# Denglish.keylayout
 
-The pragmatic OS X keyboard layout for developers or Adobe Creative Suite users who (also) type in German. If this combination does not apply to you, you are probably not interested.
+OS X keyboard layout for German speaking developers and other power users
 
-## Why? ##
+## Why?
 
-German keyboard layouts are painful to use in software development, where special characters like brackets, braces, slashes are frequently needed but difficult to access. Applications like Photoshop commonly use these characters as useful keyboard shortcuts.
+English keyboard layouts are great for coding. Special characters such as `[]`, `{}`, `<>` and `/` are easy to type, which speeds up your coding speed.
 
-On the other hand, the default British keyboard layout makes it difficult to type in German. While the _ß_ character is accessible using `⌥S`, the Umlaut characters can only be reached via the `⌥U` dead key. For instance, you need to type `⌥U` then `⇧⌥A` to get _Ä_.
+German keyboard layouts are good for, well, typing German. `ä`, `ö`, `ü` and `ß` have dedicated keys assigned.
 
+You could decide which one is more important to you. You could even assign a keyboard shortcut to switch between the layouts.
 
-## How? ##
+Or, you could use _Denglish_, which gives you the best of both worlds.
 
-British Umlauts is based on the default British keyboard layout but provides to direct access to Umlaut characters:
+## How?
 
-- `⌥A` = _ä_
-- `⌥O` = _ö_
-- `⌥U` = _ü_
-- `⇧⌥A` = _Ä_
-- `⇧⌥O` = _Ö_
-- `⇧⌥U` = _Ü_
-- `⌥S` = _ß_ (unchanged from British layout)
+Denglish is based on regular U.S. or British keyboard layouts but gives you direct access to Umlaut characters. It's quite simple:
 
-The layout provides all the convenience of an English keyboard layout yet allows typing German at near-native speed, as the use of modifier keys is much faster than dead-key access.
+| You type | You get                           |
+| -------- | --------------------------------- |
+| `⌥A`     | ä                                 |
+| `⌥O`     | ö                                 |
+| `⌥U`     | ü                                 |
+| `⇧⌥A`    | Ä                                 |
+| `⇧⌥O`    | Ö                                 |
+| `⇧⌥U`    | Ü                                 |
+| `⌥S`     | ß (unchanged from default layout) |
 
-The Umlaut dead-key state is still available but remapped to `^⌥U`. This allows continued access to other characters that use the same diacritic, e.g. _ë_.
+You get the convenience of an English keyboard layout yet you can type German at near-native speed.
 
-Created using [Ukelele](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&item_id=ukelele).
+### Notes
+
+In U.S. and British layouts, `⌥U` is assigned to the dead-key state for the diaeresis diacritic (the two dots above the letter used in umlauts). It has been remapped to `^⌥U` so other characters such as _ë_ are still available.
+
+The same is true for all other characters that were overwritten by the new mappings, they are all available via `^⌥` and `^⇧⌥`.
+
+## Installation
+
+ - Download [denglish.dmg](http://abersager.github.io/denglish/denglish.dmg) and open the image.
+ - Pick your flavour by opening a folder:
+    - _us_ and _uk_ are the base layout, either U.S. or British.
+    - _de_ and _at_ simply have different icons. The layouts are identical.
+ - Drag both `Denglish.keylayout` and `Denglish.icns` onto `Keyboard Layouts`. This installs the keyboard layout in `~/Library/Keyboard Layouts`.
+ - Activate the new keyboard layout:
+   - Open System Preferences > Keyboard (Systemeinstellungen > Tastatur).
+   - Select "Input Sources" ("Eingabequellen")
+   - Click the `+` button
+   - Select "Others" in the left pane
+   - Select "Denglish" in the right pane
+   - Click "Add" ("Hinzufügen")
+
+## Acknowledgements
+
+Created using [Ukelele](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&item_id=ukelele), an OS X Keyboard Layout Editor. It free, works great and is easy to use.
