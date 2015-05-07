@@ -19,6 +19,6 @@ for e in "${englishes[@]}"; do
     done
 done
 
-hdiutil create dist/Denglish.dmg -format UDRO -volname "Denglish" -srcfolder ./build
+hdiutil create dist/denglish.dmg -format UDRO -volname "Denglish" -srcfolder ./build
 
 rm -rf build
