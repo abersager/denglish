@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/abersager/denglish/issues"
   },
-  "homepage": "https://github.com/abersager/denglish"
+  "homepage": "https://github.com/abersager/denglish",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-gh-pages": "^0.5.1",
+    "gulp-shell": "^0.4.1"
+  }
 }
