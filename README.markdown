@@ -40,7 +40,7 @@ The same is true for all other characters that were overwritten by the new mappi
  - Pick your flavour by opening a folder:
     - _us_ and _uk_ are the base layout, either U.S. or British.
     - _de_ and _at_ simply have different icons. The layouts are identical.
- - Drag both `Denglish.keylayout` and `Denglish.icns` onto `Keyboard Layouts`. This installs the keyboard layout in `~/Library/Keyboard Layouts`.
+ - Doubleclick `Install Denglish Keyboard Layout`. This installs the keyboard layout in `~/Library/Keyboard Layouts`.
  - Activate the new keyboard layout:
    - Open System Preferences > Keyboard (Systemeinstellungen > Tastatur).
    - Select "Input Sources" ("Eingabequellen")
@@ -51,4 +51,4 @@ The same is true for all other characters that were overwritten by the new mappi
 
 ## Acknowledgements
 
-Created using [Ukelele](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&item_id=ukelele), an OS X Keyboard Layout Editor. It free, works great and is easy to use.
+Created using [Ukelele](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&item_id=ukelele), a fantastic OS X Keyboard Layout Editor. It's free and easy to use.
