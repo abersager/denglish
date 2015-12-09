@@ -3,13 +3,185 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>409.2</string>
+	<string>417</string>
 	<key>AMApplicationVersion</key>
-	<string>2.5</string>
+	<string>2.6</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
 	<array>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array/>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>affirmativeTitle</key>
+					<dict/>
+					<key>displayWarning</key>
+					<dict/>
+					<key>explanationText</key>
+					<dict/>
+					<key>negativeTitle</key>
+					<dict/>
+					<key>questionText</key>
+					<dict>
+						<key>tokenizedValue</key>
+						<array>
+							<string>Denglish keyboard layout installer</string>
+						</array>
+					</dict>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array/>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Ask for Confirmation.action</string>
+				<key>ActionName</key>
+				<string>Ask for Confirmation</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>affirmativeTitle</key>
+					<string>Install</string>
+					<key>displayWarning</key>
+					<false/>
+					<key>explanationText</key>
+					<string>This application installs Denglish keyboard layout in ~/Library/Keyboard Layouts.</string>
+					<key>negativeTitle</key>
+					<string>Cancel</string>
+					<key>questionText</key>
+					<string>Denglish keyboard layout installer</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.Ask for Confirmation</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<true/>
+				<key>CanShowWhenRun</key>
+				<false/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>AMAskForConfirmationAction</string>
+				<key>InputUUID</key>
+				<string>06E4FCA7-569A-463F-9806-E397E4BD6365</string>
+				<key>Keywords</key>
+				<array>
+					<string>Message</string>
+					<string>Ask</string>
+					<string>Display</string>
+					<string>Prompt</string>
+					<string>Show</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>3244D8A3-152E-41C0-9A26-35533ACB5D79</string>
+				<key>UUID</key>
+				<string>23AD026F-B71A-4A8A-A9E5-69B62F5C511F</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>questionText</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+					<key>1</key>
+					<dict>
+						<key>default value</key>
+						<false/>
+						<key>name</key>
+						<string>displayWarning</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>1</string>
+					</dict>
+					<key>2</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>explanationText</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>2</string>
+					</dict>
+					<key>3</key>
+					<dict>
+						<key>default value</key>
+						<string>OK</string>
+						<key>name</key>
+						<string>affirmativeTitle</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>3</string>
+					</dict>
+					<key>4</key>
+					<dict>
+						<key>default value</key>
+						<string>Cancel</string>
+						<key>name</key>
+						<string>negativeTitle</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>4</string>
+					</dict>
+				</dict>
+				<key>conversionLabel</key>
+				<integer>0</integer>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>249.000000:267.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Ask for Confirmation.action/Contents/Resources/English.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
 		<dict>
 			<key>action</key>
 			<dict>
@@ -51,7 +223,8 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>source</key>
-					<string>on run {input, parameters}		set pathToMe to POSIX path of (path to me as text)	set script1 to "dirname '" &amp; pathToMe &amp; "'"	set dirPath to do shell script script1	set dirTarget to "~/Library/Keyboard Layouts/"	do shell script "cp " &amp; dirPath &amp; "/Denglish.* ~/'Library/Keyboard Layouts/'"end run</string>
+					<string>on run {input, parameters}		set pathToMe to POSIX path of (path to me as text)	set script1 to "dirname '" &amp; pathToMe &amp; "'"	set dirPath to do shell script script1	set dirTarget to "~/Library/Keyboard Layouts/"	do shell script "cp " &amp; dirPath &amp; "/Denglish.* ~/'Library/Keyboard Layouts/'"
+	end run</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.RunScript</string>
@@ -102,12 +275,10 @@ end run</string>
 						<string>0</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>309.000000:496.000000</string>
+				<string>249.000000:513.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -122,41 +293,57 @@ end run</string>
 					<key>Container</key>
 					<string>List</string>
 					<key>Optional</key>
-					<false/>
+					<true/>
 					<key>Types</key>
-					<array>
-						<string>com.apple.cocoa.attributed-string</string>
-					</array>
+					<array/>
 				</dict>
 				<key>AMActionVersion</key>
-				<string>1.2.1</string>
+				<string>1.0.2</string>
 				<key>AMApplication</key>
 				<array>
-					<string>System</string>
+					<string>Automator</string>
 				</array>
 				<key>AMParameterProperties</key>
-				<dict/>
+				<dict>
+					<key>dialogMessage</key>
+					<dict/>
+					<key>timeoutValue</key>
+					<dict/>
+					<key>useTimeout</key>
+					<dict/>
+				</dict>
 				<key>AMProvides</key>
 				<dict>
 					<key>Container</key>
 					<string>List</string>
-					<key>Optional</key>
-					<false/>
 					<key>Types</key>
-					<array>
-						<string>com.apple.cocoa.attributed-string</string>
-					</array>
+					<array/>
 				</dict>
 				<key>ActionBundlePath</key>
-				<string>/System/Library/Automator/Copy to Clipboard.action</string>
+				<string>/System/Library/Automator/Wait for User Action.action</string>
 				<key>ActionName</key>
-				<string>Copy to Clipboard</string>
+				<string>Wait for User Action</string>
 				<key>ActionParameters</key>
-				<dict/>
+				<dict>
+					<key>dialogMessage</key>
+					<string>Installation complete. Follow these steps to activate Denglish:
+
+   - Open System Preferences &gt; Keyboard (Systemeinstellungen &gt; Tastatur).
+   - Select "Input Sources" ("Eingabequellen")
+   - Click the `+` button
+   - Select "Others" in the left pane
+   - Select "Denglish" in the right pane
+   - Click "Add" ("Hinzufügen")
+</string>
+					<key>timeoutValue</key>
+					<integer>1</integer>
+					<key>useTimeout</key>
+					<false/>
+				</dict>
 				<key>BundleIdentifier</key>
-				<string>com.apple.Automator.CopyToClipboard</string>
+				<string>com.apple.Automator.FloatingDialog</string>
 				<key>CFBundleVersion</key>
-				<string>1.2.1</string>
+				<string>1.0.2</string>
 				<key>CanShowSelectedItemsWhenRun</key>
 				<true/>
 				<key>CanShowWhenRun</key>
@@ -166,36 +353,92 @@ end run</string>
 					<string>AMCategoryUtilities</string>
 				</array>
 				<key>Class Name</key>
-				<string>AMCopyToClipboardAction</string>
+				<string>AMWait_For_User_Action</string>
 				<key>InputUUID</key>
-				<string>64C71DA9-11AF-49A4-8862-A2FC7AC62B18</string>
+				<string>7D46A665-6C4D-46D6-B415-DCC1F26904FC</string>
 				<key>Keywords</key>
 				<array>
-					<string>Copy</string>
+					<string>Prompt</string>
+					<string>Wait</string>
 				</array>
 				<key>OutputUUID</key>
-				<string>7F6B9DF7-C298-4DAB-9597-C4F29B18F444</string>
+				<string>3EDAC98A-F7C2-4AC7-9B96-3E9FF6456093</string>
 				<key>UUID</key>
-				<string>C0BB0B5F-33BF-470C-847A-1F94092578DE</string>
+				<string>2470F618-72BD-41C3-8F87-EC25D293B06B</string>
 				<key>UnlocalizedApplications</key>
 				<array>
-					<string>System</string>
+					<string>Automator</string>
 				</array>
 				<key>arguments</key>
-				<dict/>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>Perform an action, then click “Continue” to proceed.</string>
+						<key>name</key>
+						<string>dialogMessage</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+					<key>1</key>
+					<dict>
+						<key>default value</key>
+						<true/>
+						<key>name</key>
+						<string>useTimeout</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>1</string>
+					</dict>
+					<key>2</key>
+					<dict>
+						<key>default value</key>
+						<integer>1</integer>
+						<key>name</key>
+						<string>timeoutValue</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>2</string>
+					</dict>
+				</dict>
 				<key>conversionLabel</key>
 				<integer>0</integer>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>249.000000:682.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Wait for User Action.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
+			<key>isViewVisible</key>
+			<true/>
 		</dict>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>94332CFD-1C4D-4FC7-BE21-11FE18BE38D2</key>
+		<key>1ABFCFF9-7BE1-4D7F-994E-C69D6E25BCB6</key>
+		<dict>
+			<key>from</key>
+			<string>23AD026F-B71A-4A8A-A9E5-69B62F5C511F - 23AD026F-B71A-4A8A-A9E5-69B62F5C511F</string>
+			<key>to</key>
+			<string>BB18CF3E-54E7-4BFF-8F7D-B13478FB2114 - BB18CF3E-54E7-4BFF-8F7D-B13478FB2114</string>
+		</dict>
+		<key>6DD4496D-F4D4-40C8-A38A-FF1448A8CE93</key>
 		<dict>
 			<key>from</key>
 			<string>BB18CF3E-54E7-4BFF-8F7D-B13478FB2114 - BB18CF3E-54E7-4BFF-8F7D-B13478FB2114</string>
 			<key>to</key>
-			<string>C0BB0B5F-33BF-470C-847A-1F94092578DE - C0BB0B5F-33BF-470C-847A-1F94092578DE</string>
+			<string>2470F618-72BD-41C3-8F87-EC25D293B06B - 2470F618-72BD-41C3-8F87-EC25D293B06B</string>
 		</dict>
 	</dict>
 	<key>workflowMetaData</key>
