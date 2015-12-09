@@ -4,6 +4,8 @@
   "description": "OS X keyboard layout for German speaking developers and other power users",
   "main": "index.js",
   "scripts": {
+    "build": "gulp build",
+    "deploy": "gulp deploy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
