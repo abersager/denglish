@@ -1,6 +1,6 @@
 # Denglish.keylayout
 
-OS X keyboard layout for German speaking developers and other power users
+macOS keyboard layout for German speaking developers and other power users
 
 ## Why?
 
@@ -14,19 +14,20 @@ Or, you could use _Denglish_, which gives you the best of both worlds.
 
 ## How?
 
-Denglish is based on regular U.S. or British keyboard layouts but gives you direct access to Umlaut characters. It's quite simple:
+Denglish is based on regular U.S. or British keyboard layouts but gives you direct access to characters needed for typing German:
 
-| You type | You get                           |
-| -------- | --------------------------------- |
-| `⌥A`     | ä                                 |
-| `⌥O`     | ö                                 |
-| `⌥U`     | ü                                 |
-| `⇧⌥A`    | Ä                                 |
-| `⇧⌥O`    | Ö                                 |
-| `⇧⌥U`    | Ü                                 |
-| `⌥S`     | ß (unchanged from default layout) |
+| You type | You get                         | Unicode |
+| -------- | ------------------------------- | ------- |
+| `⌥A`     | ä                               | U+00E4  |
+| `⌥O`     | ö                               | U+00F6  |
+| `⌥U`     | ü                               | U+00FC  |
+| `⇧⌥A`    | Ä                               | U+00C4  |
+| `⇧⌥O`    | Ö                               | U+00D6  |
+| `⇧⌥U`    | Ü                               | U+00DC  |
+| `⌥S`     | ß (unchanged from US/UK layout) | U+00DF  |
+| `⇧⌥S`    | ẞ (Capital Sharp S / Eszett)    | U+1E9E  |
 
-You get the convenience of an English keyboard layout yet you can type German at near-native speed.
+You get the convenience of an English keyboard layout yet you can type German at near-native speed. Capital Sharp S isn't even accessible on standard German layouts.
 
 ### Notes
 
@@ -36,19 +37,20 @@ The same is true for all other characters that were overwritten by the new mappi
 
 ## Installation
 
- - Download [denglish.dmg](http://abersager.github.io/denglish/denglish.dmg) and open the image.
- - Pick your flavour by opening a folder:
-    - _us_ and _uk_ are the base layout, either U.S. or British.
-    - _de_ and _at_ simply have different icons. The layouts are identical.
- - Doubleclick `Install Denglish Keyboard Layout`. This installs the keyboard layout in `~/Library/Keyboard Layouts`.
- - Activate the new keyboard layout:
-   - Open System Preferences > Keyboard (Systemeinstellungen > Tastatur).
-   - Select "Input Sources" ("Eingabequellen")
-   - Click the `+` button
-   - Select "Others" in the left pane
-   - Select "Denglish" in the right pane
-   - Click "Add" ("Hinzufügen")
+- Download [denglish.dmg](http://abersager.github.io/denglish/denglish.dmg) and open the image.
+- Pick your flavour by opening a folder:
+  - _us_ and _uk_ are the base layout, either U.S. or British.
+  - _de_ and _at_ simply have different icons. The layouts are identical.
+- Copy both files (.keylayout and .icns) to ~/Library/Keyboard Layouts
+  (Library is hidden by default – hold ⌥, then select Finder > Go > Library)
+- Activate the new keyboard layout:
+  - Open System Preferences > Keyboard (Systemeinstellungen > Tastatur).
+  - Select "Input Sources" ("Eingabequellen")
+  - Click the `+` button
+  - Select "Others" in the left pane
+  - Select "Denglish" in the right pane
+  - Click "Add" ("Hinzufügen")
 
 ## Acknowledgements
 
-Created using [Ukelele](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&item_id=ukelele), a fantastic OS X Keyboard Layout Editor. It's free and easy to use.
+Created using [Ukelele](https://software.sil.org/ukelele/), a macOS Unicode Keyboard Layout Editor. It's free and easy to use.
