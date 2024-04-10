@@ -13,7 +13,6 @@ for e in "${englishes[@]}"; do
         mkdir build/$e-$g
         cp denglish-$e.keylayout build/$e-$g/Denglish.keylayout
         cp icons/icns/icon-$e-$g.icns build/$e-$g/Denglish.icns
-        cp -R installer/Install\ Denglish\ Keyboard\ Layout.app build/$e-$g/
     done
 done
 
