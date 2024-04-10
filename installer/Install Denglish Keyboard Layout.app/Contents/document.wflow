@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>417</string>
+	<string>523</string>
 	<key>AMApplicationVersion</key>
-	<string>2.6</string>
+	<string>2.10</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -71,7 +71,7 @@
 					<string>Denglish keyboard layout installer</string>
 				</dict>
 				<key>BundleIdentifier</key>
-				<string>com.apple.Automator.Ask for Confirmation</string>
+				<string>com.apple.Automator.AskforConfirmation</string>
 				<key>CFBundleVersion</key>
 				<string>1.0.2</string>
 				<key>CanShowSelectedItemsWhenRun</key>
@@ -107,9 +107,9 @@
 					<key>0</key>
 					<dict>
 						<key>default value</key>
-						<string></string>
+						<string>Cancel</string>
 						<key>name</key>
-						<string>questionText</string>
+						<string>negativeTitle</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -159,9 +159,9 @@
 					<key>4</key>
 					<dict>
 						<key>default value</key>
-						<string>Cancel</string>
+						<string></string>
 						<key>name</key>
-						<string>negativeTitle</string>
+						<string>questionText</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -170,14 +170,12 @@
 						<string>4</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>249.000000:267.000000</string>
+				<string>249.000000:266.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Ask for Confirmation.action/Contents/Resources/English.lproj/main.nib</string>
+				<string>/System/Library/Automator/Ask for Confirmation.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
@@ -223,8 +221,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>source</key>
-					<string>on run {input, parameters}		set pathToMe to POSIX path of (path to me as text)	set script1 to "dirname '" &amp; pathToMe &amp; "'"	set dirPath to do shell script script1	set dirTarget to "~/Library/Keyboard Layouts/"	do shell script "cp " &amp; dirPath &amp; "/Denglish.* ~/'Library/Keyboard Layouts/'"
-	end run</string>
+					<string>on run {input, parameters}		set pathToMe to POSIX path of (path to me as text)	set script1 to "dirname '" &amp; pathToMe &amp; "'"	set dirPath to do shell script script1	set dirTarget to "~/Library/Keyboard Layouts/"	do shell script "cp " &amp; dirPath &amp; "/Denglish.* ~/'Library/Keyboard Layouts/'"	do shell script "open x-apple.systempreferences:com.apple.Keyboard-Settings.extension"end run</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.RunScript</string>
@@ -278,7 +275,7 @@ end run</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>249.000000:513.000000</string>
+				<string>249.000000:511.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -328,8 +325,8 @@ end run</string>
 					<key>dialogMessage</key>
 					<string>Installation complete. Follow these steps to activate Denglish:
 
-   - Open System Preferences &gt; Keyboard (Systemeinstellungen &gt; Tastatur).
-   - Select "Input Sources" ("Eingabequellen")
+   - The installer opened System Settings &gt; Keyboard (Systemeinstellungen &gt; Tastatur) for you.
+   - Click "Edit…" within "Input Sources" section ("Eingabequellen")
    - Click the `+` button
    - Select "Others" in the left pane
    - Select "Denglish" in the right pane
@@ -374,7 +371,7 @@ end run</string>
 					<key>0</key>
 					<dict>
 						<key>default value</key>
-						<string>Perform an action, then click “Continue” to proceed.</string>
+						<string>Perform an action, then click Continue to proceed.</string>
 						<key>name</key>
 						<string>dialogMessage</string>
 						<key>required</key>
@@ -387,9 +384,9 @@ end run</string>
 					<key>1</key>
 					<dict>
 						<key>default value</key>
-						<true/>
+						<integer>1</integer>
 						<key>name</key>
-						<string>useTimeout</string>
+						<string>timeoutValue</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -400,9 +397,9 @@ end run</string>
 					<key>2</key>
 					<dict>
 						<key>default value</key>
-						<integer>1</integer>
+						<true/>
 						<key>name</key>
-						<string>timeoutValue</string>
+						<string>useTimeout</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -411,12 +408,10 @@ end run</string>
 						<string>2</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>249.000000:682.000000</string>
+				<string>249.000000:679.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Wait for User Action.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -426,19 +421,19 @@ end run</string>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>1ABFCFF9-7BE1-4D7F-994E-C69D6E25BCB6</key>
-		<dict>
-			<key>from</key>
-			<string>23AD026F-B71A-4A8A-A9E5-69B62F5C511F - 23AD026F-B71A-4A8A-A9E5-69B62F5C511F</string>
-			<key>to</key>
-			<string>BB18CF3E-54E7-4BFF-8F7D-B13478FB2114 - BB18CF3E-54E7-4BFF-8F7D-B13478FB2114</string>
-		</dict>
-		<key>6DD4496D-F4D4-40C8-A38A-FF1448A8CE93</key>
+		<key>067013FB-E01D-4FEB-85B6-9EA5AA470F56</key>
 		<dict>
 			<key>from</key>
 			<string>BB18CF3E-54E7-4BFF-8F7D-B13478FB2114 - BB18CF3E-54E7-4BFF-8F7D-B13478FB2114</string>
 			<key>to</key>
 			<string>2470F618-72BD-41C3-8F87-EC25D293B06B - 2470F618-72BD-41C3-8F87-EC25D293B06B</string>
+		</dict>
+		<key>18F0A8A4-647F-4DB9-B429-FAA776631621</key>
+		<dict>
+			<key>from</key>
+			<string>23AD026F-B71A-4A8A-A9E5-69B62F5C511F - 23AD026F-B71A-4A8A-A9E5-69B62F5C511F</string>
+			<key>to</key>
+			<string>BB18CF3E-54E7-4BFF-8F7D-B13478FB2114 - BB18CF3E-54E7-4BFF-8F7D-B13478FB2114</string>
 		</dict>
 	</dict>
 	<key>workflowMetaData</key>
